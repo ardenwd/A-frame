@@ -8,14 +8,14 @@
      
       <a-assets>
         <a-asset-item id="lines" src="lines5.gltf"></a-asset-item>
-        <img
-          id="canvas"
-          src="/canvas.jpeg"
+         <img
+           id="canvas" 
+           src="canvas.jpeg"
         />
       </a-assets>
 
       <!-- Adding Sky -->
-      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 180; radius: 60" material="src:"#canvas"; side: back; height: 2048; width: 2048; shader: flat"></a-entity>
+      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 180; radius: 60" material="src: #canvas; side: back; height: 4096; width: 4096; shader: flat"></a-entity>
 
       <!-- Multi-colored Cube 1 -->
       <a-entity position="-0.001 2.5 -20" rotation="0 0 -35" scale="1.5 1 1">
