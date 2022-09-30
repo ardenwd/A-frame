@@ -16,10 +16,14 @@
           id="skyTexture"
           src="https://cdn.aframe.io/a-painter/images/sky.jpg"
         />
+         <img
+           id="canvas" 
+           src="https://cdn.glitch.global/d4be57d8-f3f3-4f68-8860-6a96fdfff511/canvas.jpg?v=1664506167928"
+        />
       </a-assets>
 
       <!-- Adding Sky -->
-      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 180; radius: 60" material="side: back; height: 2048; width: 2048; color:pink; shader: flat"></a-entity>
+      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 180; radius: 60" material="src: #canvas; side: back; height: 2048; width: 2048; shader: flat"></a-entity>
 
       <!-- Multi-colored Cube 1 -->
       <a-entity position="-0.001 2.5 -20" rotation="0 0 -35" scale="1.5 1 1">
