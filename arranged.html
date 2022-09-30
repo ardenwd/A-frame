@@ -2,10 +2,9 @@
   <head>
     <title>"The Smile of the Flamboyant Wings" 3D Interpretation</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/mrturck/aframe-joystick/master/joystick.min.js"></script>
   </head>
   <body>
-  <a-scene joystick>
+  <a-scene >
      
       <a-assets>
         <a-asset-item id="lines" src="lines4.gltf"></a-asset-item>
@@ -26,9 +25,7 @@
       <!-- Adding Sky -->
       <a-entity id="sky" geometry="primitive: sphere; thetaLength: 180; radius: 60" material="src: #canvas; side: back; height: 2048; width: 2048; shader: flat"></a-entity>
 
-      <a-entity camera id="camera" position="0 1.6 0" look-controls wasd-controls>
-        
-      <!-- All non-sky elements-->
+    <!-- All non-sky elements-->
       <a-entity position="0 0 25">
       
       <!-- Multi-colored Cube 1 -->
